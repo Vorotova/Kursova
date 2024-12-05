@@ -8,6 +8,7 @@ class SalesEngineersWindow extends JFrame {
         setTitle("Інженери з продажу");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(3, 1, 10, 10));
