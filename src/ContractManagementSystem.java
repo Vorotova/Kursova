@@ -62,12 +62,6 @@ public class ContractManagementSystem {
                 .orElse(null);
     }
 
-    public SupplyContract getProductWithMaxDemand() {
-        return contracts.stream()
-                .max(Comparator.comparingInt(SupplyContract::getQuantity))
-                .orElse(null);
-    }
-
     public boolean isContractIdUnique(int contractId) {
         return contracts.stream().noneMatch(contract -> contract.getContractId() == contractId);
     }
